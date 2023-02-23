@@ -2,24 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Caesar Cipher</title>  
   </head>
 
   <body>
     <main>
-    <script src="app.js"></script>
-    <div id="root">
-      <h1>¡Cifra y decifra tus mensajes!</h1>
-    </div>
-    <div class="contenedorBtn">
-      <a href="cifrar.html"><button class="menuP" id="btnCif">Cifrar</button></a>
-      <br>
-      <br>
-      <a href="descifrar.html"><button class="menuP" id="btnDcif">Descifrar</button></a>
-    </div>
+    <section id="Title">
+      <h1>Vuelve tus mensajes un secreto</h1>
+    </section>
+    
+    <section id="container">
+      <p> ¿Qué número de desplazamiento quieres?
+      <input type="number" min="1" max="40" class="offset" id="offset">
+      </p>
+
+      <section>
+        <textarea class="msg" id="msgI" placeholder="¿Cuál es tu mensaje?"></textarea>
+        <div id="botones">
+          <input type="button" class="boton" id="cifrar" value="Cifrar"/>
+          <input type="button" class="boton" id="descifrar" value="Descifrar"/>
+        </div>
+      </section>
+      <section>
+        <textarea class="msg" id="msgF" placeholder="Tu mensaje cifrado es:" disabled></textarea>
+      </section>
+
+    </section>
     </main>
-   
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

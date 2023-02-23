@@ -1,23 +1,99 @@
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #4444ff;
-    background-image: url(../src/cifrado_fondo.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}    
+  display: flex;
+  width: 1024px;
+  height: 600px;
+  margin: 0%;
+  font-family: Tahoma, 'Trebuchet MS', sans-serif;
+  background-color: #3f241c;
+  background-image: url(../src/img/cifrado_fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#Title{
+  width: 1024px;
+  height: 30px;
+  margin-left: 16%;
+}
 h1{
-    color: #3e32df;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    text-align: center;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  color: #fce5bc;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 35px;
+  text-justify: center;
+  text-align: center;
 }
-.contenedorBtn{
-    align-items: center;
+#container{
+  margin-top: 10%;
+  margin-left: 35%;
+  margin-right: 40%;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-left: 50px;
+  width: 575px;
+  height: 330px;
+  background-color: #271002d2;
 }
-
+p{
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-family: Tahoma;
+  font-size: 14pt;
+  color: #fff6dc;
+  text-align: left;
+}
+#msgI{
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 250px;
+  height: 200px;
+  resize: none;
+  border-radius: 10px;
+  background-color:white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10pt;
+}
+#msgF{
+  float: right;
+  margin-top: -30px;
+  margin-right: 15px;
+  width: 250px;
+  height: 200px;
+  resize: none;
+  border-radius: 10px;
+  background-color: #bda981;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10pt;
+}
+#botones{
+  width: 250px;
+  height: 40px;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+#cifrar{
+  width: 90px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 13pt;
+  color: #ffecce;
+  border-radius: 6px;
+  border-color: #eb5656;
+  background-color: #70070c;
+}
+#descifrar{
+  width: 90px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 5px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 13pt;
+  color: #ffecce;
+  border-radius: 6px;
+  border-color: #eb5656;
+  background-color: #70070c;
+}
