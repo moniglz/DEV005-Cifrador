@@ -1,99 +1,176 @@
 body{
   display: flex;
-  width: 1024px;
-  height: 600px;
-  margin: 0%;
-  font-family: Tahoma, 'Trebuchet MS', sans-serif;
-  background-color: #3f241c;
+  justify-content: center;
+  align-items: center;
+  position: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #472f28;
   background-image: url(../src/img/cifrado_fondo.jpg);
+  background-size: cover;
+  background-position: center 30px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
 }
-#Title{
-  width: 1024px;
-  height: 30px;
-  margin-left: 16%;
-}
-h1{
-  margin-top: 15px;
-  padding-bottom: 15px;
-  color: #fce5bc;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 35px;
-  text-justify: center;
+header{
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  background-color: #5a181ff5;
+  color: #f8e6c4;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40pt;
+  font-weight: 700;
   text-align: center;
 }
+h1{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  margin-top: 120px;
+  margin-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace, serif;
+  font-size: 24pt;
+  font-weight: 700;
+  text-align: center;
+  color: #09091b;
+  text-shadow: #2c1d18;
+}
+h2{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace, serif;
+  font-size: 11pt;
+  font-weight: 800;
+  text-align: center;
+  color: #00000a;
+  text-shadow: #eedfd9;
+}
 #container{
-  margin-top: 10%;
-  margin-left: 35%;
-  margin-right: 40%;
-  padding-top: 20px;
-  padding-right: 25px;
-  padding-left: 50px;
+  justify-content: center;
+  align-items: center;
+  position:static;
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 575px;
   height: 330px;
-  background-color: #271002d2;
+  background-color: #1f1813de;
 }
 p{
-  margin-top: 2px;
-  margin-bottom: 10px;
-  font-family: Tahoma;
-  font-size: 14pt;
-  color: #fff6dc;
-  text-align: left;
-}
-#msgI{
-  float: left;
   margin-top: 10px;
   margin-bottom: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12pt;
+  font-weight: 500;
+  color: #fff6dc;
+  text-align: center;
+}
+input[type=number]{
+  margin-left: 5px;
+  border: 2px solid #5e543b;  
+  border-radius: 15px;
+  width: 35px;
+  height: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10pt;
+  text-align: right;
+}
+#msgI{
+  position: left;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-bottom: 0;
   width: 250px;
   height: 200px;
   resize: none;
   border-radius: 10px;
-  background-color:white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10pt;
-}
+  background-color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-size: 11pt;
+  }
 #msgF{
-  float: right;
-  margin-top: -30px;
-  margin-right: 15px;
+  position: right;
+  margin-left: 10px;
   width: 250px;
   height: 200px;
   resize: none;
   border-radius: 10px;
   background-color: #bda981;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10pt;
+  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+  font-size: 11pt;
 }
 #botones{
   width: 250px;
   height: 40px;
-  margin-left: 15px;
-  margin-right: 20px;
+  margin-top: 10px;
+  margin-left: 35px;
 }
 #cifrar{
   width: 90px;
   height: 35px;
   margin-left: 10px;
   margin-right: 10px;
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 13pt;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-weight: 500;
+  text-align: center;
   color: #ffecce;
   border-radius: 6px;
   border-color: #eb5656;
-  background-color: #70070c;
+  background-color: #4b090c;
+  cursor: pointer;
+}
+#cifrar:hover{
+  color: #361e17;
+  border-color: #5c080c;
+  background-color: #9b3f3f;
 }
 #descifrar{
   width: 90px;
   height: 35px;
   margin-left: 10px;
   margin-right: 5px;
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 13pt;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  font-weight: 500;
+  text-align: center;
   color: #ffecce;
   border-radius: 6px;
   border-color: #eb5656;
-  background-color: #70070c;
+  background-color: #4b090c;
+  cursor: pointer;
+}
+#descifrar:hover{
+  color: #361e17;
+  border-color: #5c080c;
+  background-color: #9b3f3f;
+}
+footer{
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #29070a;
+  color: #744b4b;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 9pt;
+  text-align: center;
 }
