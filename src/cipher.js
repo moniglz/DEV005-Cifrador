@@ -40,7 +40,6 @@ const cipher = {
       const letterCodeOffset = letterCode - offset;
       const smallLetter = letterCode >= 97 && letterCode <= 122;
       const capitalLetter = letterCode >= 65 && letterCode <= 90;
-      //const specialChar = letterCode >= 32 && letterCode <= 64;
       if (smallLetter) {
         const newLetter = ((letterCodeOffset - 122) % 26) + 122;
         const encodeLetter = String.fromCharCode(newLetter);
