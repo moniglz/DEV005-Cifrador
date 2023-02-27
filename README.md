@@ -52,4 +52,4 @@ escribirá su mensaje en la caja de texto ***"¿Cuál es tu mensaje?"*** y dará
 botón "Descifrar", así podrá ver su mensaje descifrado en ***"Tu mensaje secreto es:"***.
 
 ## **Vista de TOP SECRET**
-![vistacifrador](../src/img/vista_cifrador.png)
+![vistacifrador](https://github.com/moniglz/DEV005-Cifrador/blob/main/src/img/vista_cifrador.png?raw=true)
